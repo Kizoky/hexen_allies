@@ -1,0 +1,65 @@
+//The colors seems to be ugly on the Fighter.
+
+actor Fighter: DeadMarine
+{
+	Game Hexen
+	States
+	{
+    Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(192,"BlueFighter","GreenFighter","RedFighter","SilverFighter","YellowFighter")
+		TNT1 A 1 A_SpawnItem("SFR",0,0,0,0)
+		Stop
+
+   BlueFighter:
+		TNT1 A 1 A_SpawnItem("BFR",0,0,0,0)
+		Stop
+
+   GreenFighter:
+		TNT1 A 1 A_SpawnItem("GFR",0,0,0,0)
+		Stop
+
+   RedFighter:
+		TNT1 A 1 A_SpawnItem("RFR",0,0,0,0)
+		Stop
+
+   SilverFighter:
+		TNT1 A 1 A_SpawnItem("SFR",0,0,0,0)
+		Stop
+
+   YellowFighter:
+		TNT1 A 1 A_SpawnItem("YFR",0,0,0,0)
+		Stop
+
+    Death:
+        Stop
+	}
+}
+
+Actor GFR : THEFighter //GREEN
+{
+Game Doom
+Translation "0:32=186:192", "33:50=192:186", "67:80=192:186"
+}
+
+Actor RFR : THEFighter //RED
+{
+Game Doom
+Translation "0:32=164:175", "33:50=175:164", "67:80=167:169"
+}
+
+Actor BFR : THEFighter //BLUE
+{
+Game Doom
+Translation "0:32=146:152", "33:50=152:146", "67:80=152:146"
+}
+
+Actor SFR : THEFighter //SILVER LOL
+{
+}
+
+Actor YFR : THEFighter //YELLOW
+{
+Game Doom
+Translation "0:32=246:254", "33:50=254:246", "67:80=246:247"
+}

@@ -1,0 +1,63 @@
+actor Cleric: DeadMarine
+{
+	Game Hexen
+	States
+	{
+    Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(192,"BlueCleric","GreenCleric","RedCleric","SilverCleric","YellowCleric")
+		TNT1 A 1 A_SpawnItem("BCC",0,0,0,0)
+		Stop
+
+   BlueCleric:
+		TNT1 A 1 A_SpawnItem("BCC",0,0,0,0)
+		Stop
+
+   GreenCleric:
+		TNT1 A 1 A_SpawnItem("GCC",0,0,0,0)
+		Stop
+
+   RedCleric:
+		TNT1 A 1 A_SpawnItem("RCC",0,0,0,0)
+		Stop
+
+   SilverCleric:
+		TNT1 A 1 A_SpawnItem("SCC",0,0,0,0)
+		Stop
+
+   YellowCleric:
+		TNT1 A 1 A_SpawnItem("YCC",0,0,0,0)
+		Stop
+
+    Death:
+        Stop
+	}
+}
+
+Actor GCC : THECleric //GREEN
+{
+Game Doom
+Translation "146:155=186:195"
+}
+
+Actor RCC : THECleric //RED
+{
+Game Doom
+Translation "146:155=164:175"
+}
+
+Actor BCC : THECleric //BLUE LOL
+{
+}
+
+Actor SCC : THECleric //SILVER
+{
+Game Doom
+Translation "146:155=16:25"
+}
+
+Actor YCC : THECleric //YELLOW
+{
+Game Doom
+Translation "146:155=133:142"
+}

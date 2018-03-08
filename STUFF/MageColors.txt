@@ -1,0 +1,63 @@
+actor Mage: DeadMarine
+{
+	Game Hexen
+	States
+	{
+    Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_Jump(192,"BlueMage","GreenMage","RedMage","SilverMage","YellowMage")
+		TNT1 A 1 A_SpawnItem("BME",0,0,0,0)
+		Stop
+
+   BlueMage:
+		TNT1 A 1 A_SpawnItem("BME",0,0,0,0)
+		Stop
+
+   GreenMage:
+		TNT1 A 1 A_SpawnItem("GME",0,0,0,0)
+		Stop
+
+   RedMage:
+		TNT1 A 1 A_SpawnItem("RME",0,0,0,0)
+		Stop
+
+   SilverMage:
+		TNT1 A 1 A_SpawnItem("SME",0,0,0,0)
+		Stop
+
+   YellowMage:
+		TNT1 A 1 A_SpawnItem("YME",0,0,0,0)
+		Stop
+
+    Death:
+        Stop
+	}
+}
+
+Actor GME : THEMage //GREEN
+{
+Game Doom
+Translation "146:155=186:195"
+}
+
+Actor RME : THEMage //RED
+{
+Game Doom
+Translation "146:155=164:175"
+}
+
+Actor BME : THEMage //BLUE LOL
+{
+}
+
+Actor SME : THEMage //SILVER
+{
+Game Doom
+Translation "146:155=16:25"
+}
+
+Actor YME : THEMage //YELLOW
+{
+Game Doom
+Translation "146:155=133:142"
+}

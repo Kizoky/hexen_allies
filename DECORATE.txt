@@ -1,0 +1,10 @@
+#Include "OTHER/PlayerPawns.txt"
+//////////////////////////////////
+#Include "STUFF/FighterBase.txt"
+#Include "STUFF/FighterColors.txt"
+//////////////////////////////////
+#Include "STUFF/ClericBase.txt"
+#Include "STUFF/ClericColors.txt"
+//////////////////////////////////
+#Include "STUFF/MageBase.txt"
+#Include "STUFF/MageColors.txt"
