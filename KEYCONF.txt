@@ -1,4 +1,0 @@
-clearplayerclasses
-addplayerclass NEWFighterPlayer
-addplayerclass NEWClericPlayer
-addplayerclass NEWMagePlayer

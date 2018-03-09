@@ -1,0 +1,15 @@
+gameinfo
+{
+	//border = 0,0,"b","b","b","b","b","b","b","b"
+	//borderflat = "YLWRCK"
+	//dimcolor = "YELLOW"
+	//menufontcolor_title = "GOLD"
+	//menufontcolor_label = "GOLD"
+	//menufontcolor_value = "YELLOW"
+	//menufontcolor_action = "YELLOW"
+	//menufontcolor_header = "YELLOW"
+	//menufontcolor_highlight = "GOLD"
+	//menufontcolor_selection = "GOLD"
+	//pausesign = "M_PAUSE"
+	playerclasses="NEWFighterPlayer","NEWMagePlayer","NEWClericPlayer"
+}

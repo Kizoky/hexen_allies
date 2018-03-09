@@ -38,8 +38,8 @@ ACTOR NEWFighterPlayer : PlayerPawn
   Player.ColorSetFile 5, "Gray",          "TRANTBL4",  0x2D
   Player.ColorSetFile 6, "Brown",         "TRANTBL5",  0x6F
   Player.ColorSetFile 7, "Purple",        "TRANTBL6",  0xEE
-
   damagefactor "FriendlyFire", 0
+  
   States
   {
   Spawn:
